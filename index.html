@@ -2570,9 +2570,9 @@ footer a.fv:focus-visible i { background: #fff; color: #0b7a39; transform: trans
         </div>
       </div>
 
-      <!-- Link para o PDF do plano completo (o arquivo precisa estar na mesma pasta do site) -->
+      <!-- Link para o site com o plano completo -->
       <div style="text-align:center;margin-top:28px">
-        <a class="btn" href="plano-completo.pdf" target="_blank" rel="noopener" style="font-size:14px;padding:12px 28px">Plano completo ↓</a>
+        <a class="btn" href="https://pedro-cauaa.github.io/propostas_impeto" target="_blank" rel="noopener" style="font-size:14px;padding:12px 28px">Plano completo ↗</a>
       </div>
     </div>
   </section>
@@ -2838,14 +2838,58 @@ mostrarIntegrante(0, true);                      /* estado inicial: primeiro int
    Cada item é: [destaque em negrito, texto]  ou  ['#', 'subtítulo'] (para separar grupos).
    Exemplo de item:  ["Feira de talentos", "Evento semestral com apresentações dos alunos."] */
 var temas = [
-  ["Coordenação Mulheres",           "Propostas desta coordenação em breve.", []],
-  ["Coordenação Eventos",            "Propostas desta coordenação em breve.", []],
-  ["Coordenação Comunicação",        "Propostas desta coordenação em breve.", []],
-  ["Coordenação Esportes",           "Propostas desta coordenação em breve.", []],
-  ["Coordenação Ciência e Tecnologia", "Propostas desta coordenação em breve.", []],
-  ["Coordenação Cultura e Extensão", "Propostas desta coordenação em breve.", []],
-  ["Coordenação Formação Política",  "Propostas desta coordenação em breve.", []],
-  ["Coordenação Assuntos Estudantis", "Propostas desta coordenação em breve.", []]
+  ["Presidência", "Compromissos da Presidência.", [
+    ["Presença estudantil", "Aproximação com estudantes e representações de todas as modalidades de ensino, fortalecendo a escuta e o diálogo."],
+    ["Suporte aos membros", "Acompanhamento e apoio aos membros do Grêmio, garantindo a distribuição equilibrada de tarefas e a atuação colaborativa."],
+    ["Prestação de contas", "Elaboração de relatórios bimestrais das atividades da Presidência, encaminhados ao Conselho de Representantes de Turma."],
+    ["Busca por melhorias", "Levantamento de demandas relacionadas à infraestrutura, segurança, transporte e regulamentações, encaminhando-as diretamente à Direção."],
+    ["Acompanhamento das demandas", "Monitoramento das solicitações encaminhadas à instituição, cobrando respostas, prazos e cumprimento dos compromissos assumidos."],
+    ["Integração da entidade", "Realização de reuniões frequentes com os membros para planejamento, alinhamento e participação coletiva nas decisões."]
+  ]],
+  ["Presidência do CRT", "Compromissos da Presidência do CRT.", [
+    ["Integração entre turmas", "Promoção de atividades como acolhimento de novatos, intercurso e campanhas de divulgação dos cursos, fortalecendo a união estudantil."],
+    ["Valorização dos representantes", "Divulgação do papel dos representantes de turma e da importância do CRT, fortalecendo o reconhecimento, o respeito e a autonomia das representações estudantis."],
+    ["Acolhimento dos novos representantes", "Ambientação dos novos membros por meio de reuniões, guias informativos, orientações e troca de experiências com representantes veteranos."],
+    ["Integração do conselho", "Promoção de atividades bimestrais de lazer, cultura e esporte, fortalecendo o entrosamento e o bem-estar dos representantes."],
+    ["Atualização do regimento", "Revisão coletiva do regimento do CRT, com participação dos representantes e ampla divulgação à comunidade estudantil."],
+    ["Fiscalização do Grêmio", "Acompanhamento das ações do Grêmio por meio de relatórios bimestrais, reuniões e cobranças sobre propostas, prazos e prestações de contas."]
+  ]],
+  ["Secretariado", "Compromissos do Secretariado.", [
+    ["Organização da entidade", "Criação de um organograma público com a estrutura organizacional do Grêmio e suas respectivas atualizações."],
+    ["Acompanhamento das propostas", "Divulgação bimestral do andamento do Plano da Entidade, apresentando metas alcançadas, ações realizadas e pendências."],
+    ["Escuta estudantil", "Realização de consultas e reuniões periódicas para receber reivindicações, organizar demandas e apresentar os encaminhamentos aos estudantes."],
+    ["Articulação interna", "Integração entre Presidência, Coordenações e corpo discente, organizando reuniões, demandas e fluxos de comunicação."]
+  ]],
+  ["Tesouraria", "Compromissos da Tesouraria.", [
+    ["Central de transparência", "Criação de um espaço digital com relatórios financeiros, receitas, despesas, saldos e comprovantes, incluindo prestações de contas bimestrais e por evento."],
+    ["Diversificação de receitas", "Fortalecimento do caixa por meio de eventos, vendas de produtos, parcerias, contribuições voluntárias e campanhas de arrecadação."],
+    ["Fiscalização financeira", "Garantia de acesso do CRT aos relatórios e documentos financeiros, além de respostas às solicitações em até 7 dias úteis."],
+    ["Organização financeira", "Separação dos recursos em Caixa Geral e Recursos Vinculados, com registro transparente da origem e destinação de cada valor."],
+    ["Reserva financeira", "Manutenção de uma reserva para imprevistos, com valor definido em conjunto com a Gestão e divulgado aos estudantes."],
+    ["Educação financeira", "Promoção de conteúdos, oficinas e palestras sobre educação financeira, com pelo menos uma ação por semestre."]
+  ]],
+  ["Coordenação de Eventos", "Compromissos da Coordenação de Eventos.", [
+    ["Lazer estudantil", "Realização de atividades frequentes de lazer, como sessões de filmes, karaokê, bingo, apresentações musicais e tardes de jogos."],
+    ["Calendário de eventos", "Criação de um calendário anual com datas e programações estudantis e institucionais, divulgado antecipadamente."],
+    ["Comissões estudantis", "Participação dos estudantes na organização dos eventos, com oportunidades de monitoria, experiência e certificação."],
+    ["Transparência nos eventos", "Divulgação das arrecadações, despesas, doações e pontuações das competições, garantindo também a entrega das premiações."],
+    ["Integração entre campi", "Promoção de visitas a outros campi do Instituto Federal, fortalecendo a integração entre estudantes."],
+    ["Participação institucional", "Ampliação da presença estudantil nas comissões organizadoras de eventos institucionais, fortalecendo o diálogo com a instituição."]
+  ]],
+  ["Coordenação de Esporte", "Propostas desta coordenação em breve.", []],
+  ["Coordenação de Comunicação", "Compromissos da Coordenação de Comunicação.", [
+    ["Presença digital", "Atuação ativa do Grêmio no Instagram, YouTube e TikTok, divulgando informações, eventos, oportunidades, decisões e mobilizações estudantis."],
+    ["Jornal estudantil", "Criação de vídeos informativos mensais com notícias, atualizações acadêmicas e ações desenvolvidas pelo Grêmio."],
+    ["Capacitação", "Oferta de formações em comunicação estudantil, com atividades conduzidas por estudantes experientes e abertas aos interessados."],
+    ["Grupo de comunicação", "Criação de uma equipe de apoio formada por estudantes para produção de artes, roteiros, vídeos e cobertura de eventos."],
+    ["Produção discente", "Incentivo à criação e divulgação de vídeos, documentários, podcasts, jornais e outras produções estudantis."],
+    ["Oportunidades na comunicação", "Divulgação de bolsas, monitorias, editais, concursos e oportunidades institucionais na área de comunicação."]
+  ]],
+  ["Coordenação de Mulheres", "Propostas desta coordenação em breve.", []],
+  ["Coordenação de Ciência e Tecnologia", "Propostas desta coordenação em breve.", []],
+  ["Coordenação de Cultura e Extensão", "Propostas desta coordenação em breve.", []],
+  ["Coordenação de Formação Política", "Propostas desta coordenação em breve.", []],
+  ["Coordenação de Assuntos Estudantis", "Propostas desta coordenação em breve.", []]
 ];
 
 var indiceTema = 0;                  /* tema selecionado agora */
@@ -2856,7 +2900,7 @@ temas.forEach(function (d, i) {
   var b = document.createElement('button');
   b.type = 'button';
   b.setAttribute('role', 'tab');
-  b.innerHTML = '<b>0' + (i + 1) + '</b><span>' + d[0] + '</span><svg class="fl" viewBox="0 0 100 140" aria-hidden="true"><use href="#f"/></svg>';
+  b.innerHTML = '<b>' + doisDigitos(i) + '</b><span>' + d[0] + '</span><svg class="fl" viewBox="0 0 100 140" aria-hidden="true"><use href="#f"/></svg>';
   b.onclick = function () {
     indiceTema = i;
     $('q').value = '';               /* limpa a busca ao trocar de tema */
@@ -2900,7 +2944,7 @@ function desenharPainel() {
   /* MODO TEMA: mostra o tema selecionado. */
   var d = temas[indiceTema];
   painel.innerHTML =
-    '<div class="bn">0' + (indiceTema + 1) + '</div>' +
+    '<div class="bn">' + doisDigitos(indiceTema) + '</div>' +
     '<div class="eb">Tema</div>' +
     '<h3>' + d[0] + '</h3>' +
     '<p>' + d[1] + '</p>' +
